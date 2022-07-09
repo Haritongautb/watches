@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+    <!-- Sprites -->
+    <svg style="display: none;">
+        <symbol id="instagram" viewBox="0 0 23 24">
+            <g>
+                <path d="M6.6571 0.67334C2.98565 0.67334 0 3.63873 0 7.28325V16.8407C0 20.4852 2.98565 23.449 6.6571 23.449H16.3429C20.0143 23.449 23 20.4852 23 16.8407V7.28325C23 3.63873 20.0143 0.67334 16.3429 0.67334H6.6571ZM6.6571 2.6313H16.3429C18.9559 2.6313 21.0292 4.68941 21.0292 7.28325V16.8407C21.0292 19.4345 18.9559 21.491 16.3429 21.491H6.6571C4.04408 21.491 1.97241 19.4345 1.97241 16.8407V7.28325C1.97241 4.68941 4.04408 2.6313 6.6571 2.6313ZM17.6727 4.58924C16.9107 4.58924 16.2934 5.20201 16.2934 5.95832C16.2934 6.71466 16.9107 7.32741 17.6727 7.32741C18.4346 7.32741 19.0519 6.71466 19.0519 5.95832C19.0519 5.20201 18.4346 4.58924 17.6727 4.58924ZM11.5 6.19713C8.24893 6.19713 5.59264 8.83395 5.59264 12.0612C5.59264 15.2884 8.24893 17.9252 11.5 17.9252C14.7511 17.9252 17.409 15.2884 17.409 12.0612C17.409 8.83395 14.7511 6.19713 11.5 6.19713ZM11.5 8.15509C13.6853 8.15509 15.4366 9.89192 15.4366 12.0612C15.4366 14.2304 13.6853 15.9672 11.5 15.9672C9.31472 15.9672 7.56504 14.2304 7.56504 12.0612C7.56504 9.89192 9.31472 8.15509 11.5 8.15509Z"/>
+            </g>
+        </symbol>
+        <symbol id="facebook" viewBox="0 0 12 22">
+            <g>
+                <path d="M8.83169 0.571289C5.69558 0.571289 3.54784 2.30036 3.54784 5.47684V8.21442H0V11.9271H3.54784V21.449H7.78878V11.9271H11.3267L11.8581 8.21442H7.78878V5.84364C7.78878 4.76904 8.11969 4.0365 9.8251 4.0365H12V0.717411C11.6238 0.672179 10.3339 0.571289 8.83169 0.571289Z"/>
+            </g>
+        </symbol>
+        <symbol id="twitter" viewBox="0 0 22 18">
+            <g>
+                <path d="M22 2.38918C21.191 2.73222 20.321 2.96407 19.4081 3.06852C20.3398 2.5346 21.0552 1.68955 21.3922 0.682817C20.5202 1.17718 19.5546 1.53577 18.526 1.72905C17.7032 0.891167 16.5301 0.367432 15.232 0.367432C12.7393 0.367432 10.7189 2.298 10.7189 4.67956C10.7189 5.01766 10.7584 5.34689 10.8357 5.6623C7.0846 5.4827 3.75901 3.76541 1.53295 1.15673C1.14443 1.79333 0.921886 2.53398 0.921886 3.3244C0.921886 4.82069 1.71835 6.14036 2.92973 6.91397C2.18992 6.89187 1.49391 6.6978 0.885376 6.37458C0.88451 6.39275 0.884504 6.41067 0.884504 6.4287C0.884504 8.51842 2.44044 10.2609 4.50492 10.6573C4.12653 10.7559 3.7279 10.808 3.31624 10.808C3.02512 10.808 2.74286 10.7817 2.46681 10.7311C3.04153 12.4443 4.70801 13.6912 6.68333 13.7261C5.13742 14.8829 3.19166 15.5719 1.07697 15.5719C0.712916 15.5719 0.353368 15.5514 0 15.5118C1.99818 16.7353 4.37022 17.449 6.91929 17.449C15.2207 17.449 19.7597 10.8783 19.7597 5.17934C19.7597 4.99246 19.7552 4.80686 19.747 4.62193C20.6285 4.01345 21.3936 3.25416 21.999 2.38921"/>
+            </g>
+        </symbol>
+    </svg>
+    <!-- /.Sprites -->
+
+
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header__inner">
+                    <!-- nav -->
+                    <nav class="nav">
+                        <a class="nav__logo logo" href="#">
+                            <img class="nav__logo-img logo__img" src="images/nav-logo.png" alt="logo conquest">
+                            <span class="nav__logo-span logo__span">Conquest</span>
+                        </a>
+
+                        <ul class="nav__list-middle">
+                            <li class="nav__item-middle">
+                                <a class="nav__link-middle" href="#">Каталог</a>
+                            </li>
+                            <li class="nav__item-middle">
+                                <a class="nav__link-middle" href="#">Акции</a>
+                            </li>
+                            <li class="nav__item-middle">
+                                <a class="nav__link-middle" href="#">Доставка</a>
+                            </li>
+                            <li class="nav__item-middle">
+                                <a class="nav__link-middle" href="#">Контакты</a>
+                            </li>
+                        </ul>
+
+                        <div class="nav__right">
+                            <a class="nav__link-right" href="#">
+                                <ion-icon class="nav__icon loupe-icon" name="search-outline"></ion-icon>
+                            </a>
+                            <a class="nav__link-right link-liked" href="#" data-count="9">
+                                <ion-icon class="nav__icon liked-icon" name="heart-outline"></ion-icon>
+                            </a>
+                            <a class="nav__link-right" href="#">
+                                <ion-icon class="nav__icon basket-icon" name="bag-handle-outline"></ion-icon>
+                            </a>
+                        </div>
+
+                    </nav>
+                    <!-- /.nav -->
+
+
+                    <!-- burger-btn -->
+                    <div class="burger">
+                        <div class="lines line--begin"></div>
+                        <div class="lines line--middle"></div>
+                        <div class="lines line--end"></div>
+                    </div>
+                    <!-- /.burger-btn -->
+                </div>
+            </div>
+        </header>
+
+        <!-- main -->
+        <main class="main">
+
+            <!-- hero -->
+            <section class="hero">
+                <div class="container">
+                    <div class="hero__inner">
+                        <div class="hero__content">
+                            <div class="hero__content-box">
+                                <h1 class="hero__title">
+                                    Весна/Лето 2019
+                                </h1>
+                                <div class="hero__name">Коллекция</div>
+                                <div class="hero__description">Швейцарские часы в наличии в Москву и с доставкой по всему миру</div>
+
+                                <a class="btn btn--black" href="#">Смотреть каталог</a>
+                            </div>
+
+                            <div class="hero__photo">
+                                <img class="hero__img" src="images/hero-watch.png" alt="watch">
+                                <div class="hero__watch-description watch-price">22 000 P</div>
+                                <div class="hero__watch-description watch-size">28 мм диаметр</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- /.hero -->
+
+            <!-- models -->
+            <section class="models">
+                <div class="container">
+                    <div class="models__inner for-aos">
+
+                        <h2 class="models__title section-title">Популярные модели</h2>
+
+                        <a class="models__link" href="#">Смотреть все</a>
+                        <div class="models__content">
+
+                            <ul class="models__list-watches">
+                                <li class="models__item">
+                                    <h6 class="models__item-title">rado</h6>
+                                    <div class="models__item-price">65 300 P</div>
+                                    <div class="models__item-photo">
+                                        <img class="models__item-img" src="images/watches/watch-1.png" alt="watch rado">
+                                    </div>
+                                    <a class="models__link-watches" href="#">Подробнее</a>
+                                </li>
+                                <li class="models__item">
+                                    <h6 class="models__item-title">bvlgari</h6>
+                                    <div class="models__item-price">81 700 P</div>
+                                    <div class="models__item-photo">
+                                        <img class="models__item-img" src="images/watches/watch-2.png" alt="watch bvlgari">
+                                    </div>
+                                    <a class="models__link-watches" href="#">Подробнее</a>
+                                </li>
+                                <li class="models__item">
+                                    <h6 class="models__item-title">bvlgari</h6>
+                                    <div class="models__item-price">72 700 P</div>
+                                    <div class="models__item-photo">
+                                        <img class="models__item-img" src="images/watches/watch-3.png" alt="watch bvlgari">
+                                    </div>
+                                    <a class="models__link-watches" href="#">Подробнее</a>
+                                </li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <!-- /.models -->
+
+            <!-- quality -->
+            <section class="quality">
+                <div class="container">
+                    <div class="quality__inner for-aos">
+
+                        <div class="quality__slides">
+                            <div class="quality__slides-wrapper">
+                                <div class="quality__item">
+                                    <div class="quality__item-wrapper">
+                                        <div class="quality__item-photo">
+                                            <img class="quality__item-img" src="images/quality-img.jpg" alt="swiss made">
+                                        </div>
+        
+                                        <div class="quality__content-box">
+                                            <h2 class="quality__title section-title">Подлинное качество</h2>
+                                            <p class="quality__description">Все часы производятся в Швейцарии и имеют сертификаты качества. Настоящие швейцарские часы — это предмет гордости и престижа.</p>
+        
+                                            <a class="btn btn--pink" href="#">Смотреть каталог</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="quality__item">
+                                    <div class="quality__item-wrapper">
+                                        <div class="quality__item-photo">
+                                            <img class="quality__item-img" src="images/quality-img.jpg" alt="swiss made">
+                                        </div>
+        
+                                        <div class="quality__content-box">
+                                            <h2 class="quality__title section-title">Подлинное качество</h2>
+                                            <p class="quality__description">Все часы производятся в Швейцарии и имеют сертификаты качества. Настоящие швейцарские часы — это предмет гордости и престижа.</p>
+        
+                                            <a class="btn btn--pink" href="#">Смотреть каталог</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="quality__item">
+                                    <div class="quality__item-wrapper">
+                                        <div class="quality__item-photo">
+                                            <img class="quality__item-img" src="images/quality-img.jpg" alt="swiss made">
+                                        </div>
+        
+                                        <div class="quality__content-box">
+                                            <h2 class="quality__title section-title">Подлинное качество</h2>
+                                            <p class="quality__description">Все часы производятся в Швейцарии и имеют сертификаты качества. Настоящие швейцарские часы — это предмет гордости и престижа.</p>
+        
+                                            <a class="btn btn--pink" href="#">Смотреть каталог</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <!-- /.quality -->
+
+            <!-- news -->
+            <section class="news">
+                <div class="container">
+                    <div class="news__inner for-aos">
+
+                        <div class="news__content-left">
+                            <h2 class="news__title section-title">Следите за нашими новостями</h2>
+                            <div class="news__text">Подписывайтесь на <a class="news__text-link" href="#">@conquest_watch</a> в соцсетях и узнавайте о новинках и акциях первыми.</div>
+                            <div class="news__icons-box">
+                                <a href="#" class="news__link link__icon-instagram">
+                                    <svg class="news__icon-svg instagram">
+                                        <use xlink:href="#instagram"></use>
+                                    </svg>
+                                </a>
+                                <a href="#" class="news__link link__icon-facebook">
+                                    <svg class="news__icon-svg facebook">
+                                        <use xlink:href="#facebook"></use>
+                                    </svg>
+                                </a>
+                                <a href="#" class="news__link link__icon-twitter">
+                                    <svg class="news__icon-svg twitter">
+                                        <use xlink:href="#twitter"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+
+
+                        <div class="news__content-right">
+                            <a class="news__content-link" href="#">
+                                <img class="news__content-img" src="images/photo-content/photo-1.jpg" alt="rodo watch">
+                            </a>
+                            <a class="news__content-link" href="#">
+                                <img class="news__content-img" src="images/photo-content/photo-2.jpg" alt="rodo watch">
+                            </a>
+                            <a class="news__content-link" href="#">
+                                <img class="news__content-img" src="images/photo-content/photo-3.jpg" alt="rodo watch">
+                            </a>
+                        </div>
+
+
+                    </div>
+                </div>
+            </section>
+            <!-- /.news -->
+
+
+        </main>
+        <!-- /.main -->
+
+        <!-- footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner one">
+
+
+                    <div class="footer__column">
+                        <div class="footer__column-title footer-logo logo" href="#">
+                            <img class="logo__img" src="images/logo-footer.png" alt="logo conquest">
+                            <span class="logo__span logo__span--white">Conquest</span>
+                        </div>
+                        <div class="footer__column-links">
+                            <a class="footer__column-link footer__tel-link" href="tel:84994504797">8 (499) 450-47-97</a>
+                            <a class="footer__column-link footer__mail-link" href="mailto:info@conquest.watch.ru">info@conquest.watch.ru</a>
+                        </div>
+                    </div>
+
+                    <div class="footer__column">
+                        <h6 class="footer__column-title">о компании</h6>
+                        <div class="footer__column-links">
+                            <a class="footer__column-link" href="#">Наши магазины</a>
+                            <a class="footer__column-link" href="#">Вакансии</a>
+                            <a class="footer__column-link" href="#">Сертификаты</a>
+                            <a class="footer__column-link" href="#">Отзывы</a>
+                        </div>
+                    </div>
+
+                    <div class="footer__column">
+                        <h6 class="footer__column-title">покупателям</h6>
+                        <div class="footer__column-links">
+                            <a class="footer__column-link" href="#">Каталог товаров</a>
+                            <a class="footer__column-link" href="#">Как заказать?</a>
+                            <a class="footer__column-link" href="#">FAQ</a>
+                            <a class="footer__column-link" href="#">Корпоративным клиентам</a>
+                        </div>
+                    </div>
+
+
+                    <div class="footer__column">
+                        <h6 class="footer__column-title">оплата и доставка</h6>
+                        <div class="footer__column-links">
+                            <a class="footer__column-link" href="#">Способы оплаты</a>
+                            <a class="footer__column-link" href="#">Время доставки</a>
+                            <a class="footer__column-link" href="#">Гарантии и ремонт</a>
+                            <a class="footer__column-link" href="#">Возврат и компенсация</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+        <!-- /.footer -->
+    </div>
+
+
+    <script src="js/main.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
